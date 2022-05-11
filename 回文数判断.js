@@ -12,9 +12,9 @@ console.log(isPalindrome(num))
 
 // 加上边界判断，
 const isPalindrome2 = function(x) {
+    // 负数和0结尾的数字不是回文数字
     if(x<0 || (x%10===0 && x!=0)) return false
     const nums = String(x)
-    // 负数和0结尾的数字不是回文数字
     return nums === nums.split('').reverse().join('')
 }
 const num2 = -1233210
@@ -32,5 +32,5 @@ const isPalindrome3 = function(x) {
     }
     return x===reversedNumber || x=== Math.floor(reversedNumber/10)
 }
-const num3 = 12321
+const num3 = 12344321
 console.log('333',isPalindrome3(num3))
