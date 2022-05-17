@@ -34,3 +34,5 @@ const isPalindrome3 = function(x) {
 }
 const num3 = 12344321
 console.log('333',isPalindrome3(num3))
+
+// 还有更好的办法呢
